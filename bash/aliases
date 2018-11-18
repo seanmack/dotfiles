@@ -1,0 +1,7 @@
+# git
+alias gs='git status'
+alias gb='git branch --column'
+alias ga='git add .'
+alias gd='git diff --cached'
+alias gco='git checkout'
+alias gf='gb | grep'
