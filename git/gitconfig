@@ -1,0 +1,7 @@
+[user]
+  name = Sean McEvoy
+  email = sfmcevoy@gmail.com
+[push]
+  default = simple
+[pull]
+  rebase = true
