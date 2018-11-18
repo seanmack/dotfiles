@@ -1,0 +1,33 @@
+"*":
+  "atom-elixir-formatter": {}
+  "autocomplete-plus":
+    confirmCompletion: "tab"
+  core:
+    disabledPackages: [
+      "exception-reporting"
+    ]
+    telemetryConsent: "no"
+    themes: [
+      "one-light-ui"
+      "one-dark-syntax"
+    ]
+  editor:
+    fontSize: 16
+    invisibles: {}
+  "linter-ui-default":
+    showPanel: true
+  "package-sync":
+    createOnChange: true
+    forceOverwrite: true
+  "prettier-atom":
+    formatOnSaveOptions:
+      enabled: true
+    prettierOptions:
+      singleQuote: true
+    useEslint: true
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
