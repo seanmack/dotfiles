@@ -220,7 +220,7 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>263 129 796 473 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 4 1790 873 0 0 1440 877 </string>
+	<string>0 4 1440 873 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 375 650 502 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
@@ -1015,7 +1015,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/sean/config/iTerm2</string>
+	<string>/Users/sean/dotfiles/iTerm2</string>
 	<key>PromptOnQuit</key>
 	<true/>
 	<key>QuitWhenAllWindowsClosed</key>

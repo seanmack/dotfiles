@@ -16,4 +16,4 @@ alias gss="git stash save"
 
 # utilities
 alias rl="source $HOME/.bash_profile"
-alias config="cd $HOME/config"
+alias dot="cd $HOME/dotfiles"
