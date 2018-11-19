@@ -18,13 +18,15 @@ In `~/.gitconfig`:
 
 ---
 
+In Atom, install `package-sync` package.
+
 Rename `~/.atom` to back it up, then tell Atom where to look for its config:
 
 ```
 ln -s ~/dotfiles/atom ~/.atom
 ```
 
-Then install `package-sync` package if you haven't already and run its "Sync" command.
+Run the "Sync" command for `package-sync`.
 
 ---
 
