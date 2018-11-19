@@ -17,3 +17,7 @@ alias gss="git stash save"
 # utilities
 alias rl="source $HOME/.bash_profile"
 alias dot="cd $HOME/dotfiles"
+
+# rails
+alias rc='rails console'
+alias pspec='rake parallel:spec'
