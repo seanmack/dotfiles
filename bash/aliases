@@ -1,6 +1,7 @@
 # git
 alias gs='git status'
 alias gb='git branch --column'
+alias gca='git commit --amend --no-edit'
 alias ga='git add .'
 alias gd='git diff --cached'
 alias gfb='gb | grep'
