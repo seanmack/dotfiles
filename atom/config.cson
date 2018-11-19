@@ -26,8 +26,7 @@
     prettierOptions:
       singleQuote: true
     useEslint: true
-  "tree-view":
-    hideVcsIgnoredFiles: true
+  "tree-view": {}
   welcome:
     showOnStartup: false
   whitespace:
