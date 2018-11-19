@@ -1,3 +1,6 @@
+# atom
+alias at='atom .'
+
 # git
 alias gs='git status'
 alias gb='git branch --column'
@@ -7,7 +10,7 @@ alias gd='git diff --cached'
 alias gfb='gb | grep'
 alias gco='git checkout'
 alias gf='gb | grep'
-alias kus='gco --'
+alias kus='git stash save --keep-index --include-untracked'
 alias log="git log --color --pretty=format:'%C(auto)%h %Cred %<(10,trunc)%an %Creset%C(auto)%s %Cgreen(%cr,%ar) %Creset%C(auto)%d'"
 alias grs='git reset'
 alias wip="git commit -m 'WIP `date`'"
