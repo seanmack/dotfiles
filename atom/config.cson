@@ -15,8 +15,10 @@
   editor:
     fontSize: 16
     invisibles: {}
-  "linter-ui-default":
-    showPanel: true
+  linter:
+    lintOnOpen: false
+    lintPreviewTabs: false
+  "linter-ui-default": {}
   "package-sync":
     createOnChange: true
     forceOverwrite: true

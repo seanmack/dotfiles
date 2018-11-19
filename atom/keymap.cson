@@ -23,3 +23,19 @@
 # This file uses CoffeeScript Object Notation (CSON).
 # If you are unfamiliar with CSON, you can read more about it here:
 # https://github.com/bevry/cson#what-is-cson
+
+'atom-workspace atom-text-editor:not([mini])':
+  'ctrl-up': 'editor:move-line-up'
+  'ctrl-down': 'editor:move-line-down'
+
+'.platform-darwin':
+  'cmd-shift-y': 'tree-view:reveal-active-file'
+
+'body':
+  'cmd-alt left': 'window:focus-pane-on-left'
+  'cmd-alt right': 'window:focus-pane-on-right'
+  'cmd-alt up': 'window:focus-pane-above'
+  'cmd-alt down': 'window:focus-pane-below'
+  'cmd-alt-2': 'pane:split-right'
+  'cmd-alt-3': 'pane:split-down'
+  'cmd-alt-1': 'pane:close'
