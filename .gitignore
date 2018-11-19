@@ -4,3 +4,5 @@ atom/compile-cache
 atom/storage
 atom/.apm
 atom/recovery
+bash/local/**/*
+!bash/local/.gitkeep

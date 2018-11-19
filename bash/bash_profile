@@ -1,0 +1,4 @@
+for DOTFILE in `find local`
+do
+  [ -f $DOTFILE ] && . "$DOTFILE"
+done
