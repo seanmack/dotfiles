@@ -13,6 +13,7 @@ alias grs='git reset'
 alias wip="git commit -m 'WIP `date`'"
 alias unc="git reset --soft HEAD^"
 alias gss="git stash save"
+alias boom="confirm && git reset --hard"
 
 # utilities
 alias rl="source $HOME/.bash_profile"

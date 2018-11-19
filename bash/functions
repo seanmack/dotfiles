@@ -1,0 +1,13 @@
+
+# require an affirmative response before doing <scary thing>
+confirm() {
+    read -r -p "${1:-Are you sure you want to do this? [y/N]} " response
+    case "$response" in
+        [yY][eE][sS]|[yY])
+            true
+            ;;
+        *)
+            false
+            ;;
+    esac
+}
