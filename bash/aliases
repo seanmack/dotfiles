@@ -1,5 +1,5 @@
 # atom
-alias at='atom .'
+alias a='atom .'
 
 # git
 alias gs='git status'
