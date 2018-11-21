@@ -6,7 +6,16 @@
     disabledPackages: [
       "exception-reporting"
     ]
-    excludeVcsIgnoredPaths: false
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "desktop.ini"
+      "node_modules"
+    ]
     telemetryConsent: "no"
     themes: [
       "one-light-ui"
