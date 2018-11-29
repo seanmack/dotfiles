@@ -7,3 +7,4 @@
   rebase = true
 [core]
   excludesfile = ~/dotfiles/git/gitignore
+  editor = 'atom' --wait

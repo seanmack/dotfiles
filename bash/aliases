@@ -4,6 +4,7 @@ alias a='atom .'
 # git
 alias gs='git status'
 alias gb='git branch --column'
+alias gc='git commit'
 alias gca='git commit --amend --no-edit'
 alias ga='git add -A'
 alias gd='git diff --cached'
