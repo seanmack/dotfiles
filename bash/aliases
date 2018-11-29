@@ -1,10 +1,11 @@
 # atom
-alias a='atom .'
+alias oa='atom .'
 
 # git
 alias gs='git status'
 alias gb='git branch --column'
-alias gc='git commit'
+alias gce='git commit'
+alias gcm='git commit -m'
 alias gca='git commit --amend --no-edit'
 alias ga='git add -A'
 alias gd='git diff --cached'
@@ -12,7 +13,8 @@ alias gfb='gb | grep'
 alias gco='git checkout'
 alias gf='gb | grep'
 alias kus='git stash save --keep-index --include-untracked'
-alias log="git log -15 --color --pretty=format:'%C(auto)%h %Cred %<(10,trunc)%an %Creset%C(auto)%s %Cgreen(%ar) %Creset%C(auto)%d'"
+alias gsa='git stash apply'
+alias log="git log -15 --color --pretty=format:'%C(auto)%h %Cred %<(3,trunc)%an %Creset%C(auto)%s %Cgreen(%ar) %Creset%C(auto)%d'"
 alias grs='git reset'
 alias wip="git commit -m 'WIP `date`'"
 alias unc="git reset --soft HEAD^"
@@ -26,3 +28,7 @@ alias dot="cd $HOME/dotfiles"
 # rails
 alias rc='rails console'
 alias pspec='rake parallel:spec'
+
+# yarn
+alias yt="yarn test --watchAll"
+alias ytp="yarn test --watchAll --testPathPattern"
