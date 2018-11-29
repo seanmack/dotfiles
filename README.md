@@ -35,3 +35,15 @@ In iTerm2 > Preferences > General > Preferences:
 1.  Opt to load preferences from `~/dotfiles/iTerm2`
 
 2.  Enable saving to folder on quit.
+
+---
+
+Postgres
+
+`ln -s ~/dotfiles/postgres/psqlrc ~/.psqlrc`
+
+---
+
+TODO:
+
+- Simplify setup
