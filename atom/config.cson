@@ -27,6 +27,8 @@
   linter:
     lintOnOpen: false
     lintPreviewTabs: false
+  "linter-eslint":
+    disableWhenNoEslintConfig: false
   "linter-ui-default": {}
   "package-sync":
     createOnChange: true
