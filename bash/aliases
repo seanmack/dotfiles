@@ -1,5 +1,5 @@
 # atom
-alias oa='atom .'
+alias a='atom'
 
 # git
 alias gs='git status'
@@ -27,6 +27,7 @@ alias dot="cd $HOME/dotfiles"
 
 # rails
 alias rc='rails console'
+alias rs='rails server'
 alias pspec='rake parallel:spec'
 
 # yarn
