@@ -20,6 +20,7 @@ alias wip="git commit -m 'WIP `date`'"
 alias unc="git reset --soft HEAD^"
 alias gss="git stash save"
 alias boom="confirm && git reset --hard"
+alias gfp="git fetch && git pull"
 
 # utilities
 alias rl="source $HOME/.bash_profile"
