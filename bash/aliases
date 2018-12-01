@@ -24,6 +24,7 @@ alias boom="confirm && git reset --hard"
 # utilities
 alias rl="source $HOME/.bash_profile"
 alias dot="cd $HOME/dotfiles"
+alias img='open_random_image_url'
 
 # rails
 alias rc='rails console'

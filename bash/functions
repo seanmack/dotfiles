@@ -11,3 +11,7 @@ confirm() {
             ;;
     esac
 }
+
+open_random_image_url() {
+    open "https://source.unsplash.com/collection/random/$1"
+}
