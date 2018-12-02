@@ -26,6 +26,7 @@ alias gfp="git fetch && git pull"
 alias rl="source $HOME/.bash_profile"
 alias dot="cd $HOME/dotfiles"
 alias img='open_random_image_url'
+alias alf='alias | grep'
 
 # rails
 alias rc='rails console'

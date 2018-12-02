@@ -47,5 +47,3 @@ Postgres
 TODO:
 
 - Simplify setup
-
-- Add a command to list all aliases
