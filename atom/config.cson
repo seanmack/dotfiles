@@ -17,10 +17,6 @@
       "node_modules"
     ]
     telemetryConsent: "no"
-    themes: [
-      "one-light-ui"
-      "one-dark-syntax"
-    ]
   editor:
     fontSize: 16
     invisibles: {}
@@ -29,6 +25,7 @@
     lintPreviewTabs: false
   "linter-eslint":
     disableWhenNoEslintConfig: false
+    useGlobalEslint: true
   "linter-ui-default": {}
   "package-sync":
     createOnChange: true
@@ -38,7 +35,8 @@
     prettierOptions:
       singleQuote: true
     useEslint: true
-  "tree-view": {}
+  "tree-view":
+    hideIgnoredNames: true
   welcome:
     showOnStartup: false
   whitespace:

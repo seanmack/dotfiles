@@ -1,6 +1,7 @@
 packages: [
   "busy-signal"
   "emmet"
+  "file-icons"
   "highlight-selected"
   "intentions"
   "linter"
