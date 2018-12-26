@@ -17,6 +17,10 @@
       "node_modules"
     ]
     telemetryConsent: "no"
+    themes: [
+      "atom-dark-ui"
+      "atom-dark-syntax"
+    ]
   editor:
     fontSize: 16
     invisibles: {}
@@ -25,7 +29,7 @@
     lintPreviewTabs: false
   "linter-eslint":
     disableWhenNoEslintConfig: false
-    useGlobalEslint: true
+    ignoreFixableRulesWhileTyping: true
   "linter-ui-default": {}
   "package-sync":
     createOnChange: true
