@@ -21,10 +21,12 @@ alias unc="git reset --soft HEAD^"
 alias gss="git stash save"
 alias boom="confirm && git reset --hard"
 alias gfp="git fetch && git pull"
+alias ignore="git update-index --assume-unchanged"
+alias unignore="git update-index --no-assume-unchanged"
 
 # utilities
 alias rl="source $HOME/.bash_profile"
-alias dot="cd $HOME/dotfiles"
+alias dot="cd $HOME/dotfiles && atom ."
 alias img='open_random_image_url'
 alias alf='alias | grep'
 
@@ -32,6 +34,12 @@ alias alf='alias | grep'
 alias rc='rails console'
 alias rs='rails server'
 alias pspec='rake parallel:spec'
+
+# debug server (pry-rescue must be installed)
+alias dbs="rescue rails server webrick"
+
+# debug jobs (pry-rescue must be installed)
+alias dbj="rescue rake jobs:work"
 
 # yarn
 alias yt="yarn test --watchAll"

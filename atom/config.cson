@@ -28,17 +28,23 @@
     lintOnOpen: false
     lintPreviewTabs: false
   "linter-eslint":
-    disableWhenNoEslintConfig: false
-    ignoreFixableRulesWhileTyping: true
+    autofix:
+      ignoreFixableRulesWhileTyping: true
+    disabling:
+      disableWhenNoEslintConfig: false
   "linter-ui-default": {}
   "package-sync":
     createOnChange: true
     forceOverwrite: true
+  "platformio-ide-terminal":
+    style:
+      defaultPanelHeight: "600px"
   "prettier-atom":
     formatOnSaveOptions: {}
     prettierOptions:
       singleQuote: true
     useEslint: true
+  "ruby-test": {}
   "tree-view":
     hideIgnoredNames: true
   welcome:
