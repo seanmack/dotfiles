@@ -24,7 +24,8 @@ alias gf='gb | grep'
 # kill unstaged changes
 alias kus='git stash save --keep-index --include-untracked'
 
-alias log="git log -15 --color --pretty=format:'%C(auto)%h %Cred %<(3,trunc)%an %Creset%C(auto)%s %Cgreen(%ar) %Creset%C(auto)%d'"
+# better git log
+alias log="git log -20 --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
 # unstage
 alias gus='git reset'
