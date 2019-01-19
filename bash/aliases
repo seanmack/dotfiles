@@ -1,36 +1,65 @@
-# atom
+########## atom ##########
+
 alias a='atom'
 
-# git
+########## git ##########
+
+# common git commands
 alias gs='git status'
 alias gb='git branch --column'
-alias gce='git commit'
+alias gc='git commit'
 alias gcm='git commit -m'
-alias gca='git commit --amend --no-edit'
 alias ga='git add -A'
 alias gd='git diff --cached'
-alias gfb='gb | grep'
 alias gco='git checkout'
-alias gf='gb | grep'
-alias kus='git stash save --keep-index --include-untracked'
-alias gsa='git stash apply'
-alias log="git log -15 --color --pretty=format:'%C(auto)%h %Cred %<(3,trunc)%an %Creset%C(auto)%s %Cgreen(%ar) %Creset%C(auto)%d'"
-alias grs='git reset'
-alias wip="git commit -m 'WIP `date`'"
-alias unc="git reset --soft HEAD^"
 alias gss="git stash save"
-alias boom="confirm && git reset --hard"
-alias gfp="git fetch && git pull"
+alias gsa='git stash apply'
+
+# add staged changes to last commit, but keep the commit message
+alias gca='git commit --amend --no-edit'
+
+# find a branch
+alias gf='gb | grep'
+
+# kill unstaged changes
+alias kus='git stash save --keep-index --include-untracked'
+
+alias log="git log -15 --color --pretty=format:'%C(auto)%h %Cred %<(3,trunc)%an %Creset%C(auto)%s %Cgreen(%ar) %Creset%C(auto)%d'"
+
+# unstage
+alias gus='git reset'
+
+# make a WIP commit with timestamp
+alias wip="git commit -m 'WIP `date`'"
+
+# uncommit the most recent commit
+alias unc="git reset --soft HEAD^"
+
+# throw away all changes (dangerous!)
+alias boom="confirm && git clean -f -d"
+
+# ignore changes to whatever file is passed as an argument
 alias ignore="git update-index --assume-unchanged"
+
+# stop ignoring changes to whatever file is passed as an argument
 alias unignore="git update-index --no-assume-unchanged"
 
-# utilities
-alias rl="source $HOME/.bash_profile"
-alias dot="cd $HOME/dotfiles && atom ."
-alias img='open_random_image_url'
-alias alf='alias | grep'
+########## utilities ##########
 
-# rails
+# reload profile
+alias rl="source $HOME/.bash_profile"
+
+# edit dotfiles
+alias dot="cd $HOME/dotfiles && atom ."
+
+# open a random Unsplash image, e.g. img 100x100
+alias img='open_random_image_url'
+
+# find aliases that match the arg, e.g. `fal log` or `fal .`
+alias fal='alias | grep'
+
+########## rails ##########
+
 alias rc='rails console'
 alias rs='rails server'
 alias pspec='rake parallel:spec'
@@ -41,6 +70,10 @@ alias dbs="rescue rails server webrick"
 # debug jobs (pry-rescue must be installed)
 alias dbj="rescue rake jobs:work"
 
-# yarn
+########## yarn ##########
+
+# run all JS tests and rerun them on every code change
 alias yt="yarn test --watchAll"
+
+# run JS tests, but only for filepaths that match the pattern
 alias ytp="yarn test --watchAll --testPathPattern"
