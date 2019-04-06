@@ -36,7 +36,7 @@ alias wip="git commit -m 'WIP `date`'"
 alias unc="git reset --soft HEAD^"
 
 # throw away all changes (dangerous!)
-alias boom="confirm && git clean -f -d"
+alias boom="confirm && git add . && git stash save 'boomed'"
 
 # ignore changes to whatever file is passed as an argument
 alias ignore="git update-index --assume-unchanged"
@@ -58,11 +58,15 @@ alias img='open_random_image_url'
 # find aliases that match the arg, e.g. `fal log` or `fal .`
 alias fal='alias | grep'
 
+# flush DNS cache (works on Mojave)
+alias flushdns="sudo killall -HUP mDNSResponder; sleep 2;"
+
 ########## rails ##########
 
 alias rc='rails console'
 alias rs='rails server'
 alias pspec='rake parallel:spec'
+alias loadf='rake db:fixtures:load'
 
 # debug server (pry-rescue must be installed)
 alias dbs="rescue rails server webrick"
