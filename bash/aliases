@@ -14,6 +14,9 @@ alias gco='git checkout'
 alias gss="git stash save"
 alias gsa='git stash apply'
 
+# copy current branch name to clipboard
+alias gcb="git branch | grep '^\*' | cut -d' ' -f2 | tr -d '\n' | pbcopy"
+
 # add staged changes to last commit, but keep the commit message
 alias gca='git commit --amend --no-edit'
 
@@ -60,6 +63,9 @@ alias fal='alias | grep'
 
 # flush DNS cache (works on Mojave)
 alias flushdns="sudo killall -HUP mDNSResponder; sleep 2;"
+
+# search google for query (first argument) scoped to domain (second argument)
+alias g="google"
 
 ########## rails ##########
 

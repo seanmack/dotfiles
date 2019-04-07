@@ -15,3 +15,16 @@ confirm() {
 open_random_image_url() {
     open "https://source.unsplash.com/collection/random/$1"
 }
+
+# open google search page for query (first arg) and optionally scope the
+# results to a single domain (second arg)
+google() {
+    search_url=https://www.google.com/search?q=$1
+
+    if [ $# -eq 2 ]
+      then
+        search_url="$search_url+site%3A$2"
+    fi
+
+    open $search_url
+}
