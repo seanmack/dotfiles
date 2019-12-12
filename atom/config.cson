@@ -5,6 +5,8 @@
   core:
     disabledPackages: [
       "exception-reporting"
+      "linter-rubocop"
+      "autocomplete-snippets"
     ]
     ignoredNames: [
       ".git"
@@ -18,18 +20,20 @@
     ]
     telemetryConsent: "no"
     themes: [
-      "atom-dark-ui"
-      "solarized-light-syntax"
+      "atom-material-ui"
+      "atom-material-syntax"
     ]
   editor:
-    fontSize: 16
+    fontSize: 17
     invisibles: {}
+  "fuzzy-finder":
+    scoringSystem: "fast"
+    useRipGrep: true
   linter:
     lintOnOpen: false
     lintPreviewTabs: false
   "linter-eslint":
-    autofix:
-      ignoreFixableRulesWhileTyping: true
+    autofix: {}
     disabling:
       disableWhenNoEslintConfig: false
   "linter-ui-default": {}
@@ -37,14 +41,16 @@
     createOnChange: true
     forceOverwrite: true
   "platformio-ide-terminal":
-    style:
-      defaultPanelHeight: "600px"
+    style: {}
   "prettier-atom":
     formatOnSaveOptions: {}
     prettierOptions:
       singleQuote: true
     useEslint: true
-  "ruby-test": {}
+  "ruby-test":
+    rspecAllCommand: "bundle exec rspec --tty spec"
+    rspecFileCommand: "bundle exec rspec --tty {relative_path}"
+    rspecSingleCommand: "bundle exec rspec --tty {relative_path}:{line_number}"
   "tree-view":
     hideIgnoredNames: true
   welcome:

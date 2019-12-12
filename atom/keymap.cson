@@ -42,3 +42,11 @@
 
 'atom-workspace':
   'ctrl-shift-d': 'tree-view:remove'
+
+'atom-text-editor':
+  'ctrl-d': 'editor:move-to-previous-word-boundary'
+  'ctrl-shift-d': 'editor:move-to-beginning-of-previous-paragraph'
+  'ctrl-f': 'editor:move-to-beginning-of-next-word'
+  'ctrl-f': 'editor:move-to-beginning-of-next-word'
+  'ctrl-shift-f': 'editor:move-to-beginning-of-next-paragraph'
+  'ctrl-shift-x': 'custom:move-next-buffer-line'

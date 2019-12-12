@@ -2,6 +2,7 @@ atom/packages
 atom/blob-store
 atom/compile-cache
 atom/storage
+atom/.atom-socket-secret*
 atom/.apm
 atom/recovery
 bin/local/**/*
