@@ -16,6 +16,8 @@ In `~/.gitconfig`:
     path= dotfiles/git/gitconfig
 ```
 
+---
+
 In iTerm2 > Preferences > General > Preferences:
 
 1.  Opt to load preferences from `~/dotfiles/iTerm2`
