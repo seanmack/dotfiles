@@ -1,16 +1,11 @@
-TODO: update the below for zsh
 
+Follow instructions for [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh). After downloading, it should boil down to the below:
 
-In `~/.bash_profile`:
+1. `ln -s ~/dotfiles/zsh/.zshrc ~/.zshrc`
 
-```
-for DOTFILE in `find "$HOME/dotfiles/bash"*`
-do
-  [ -f $DOTFILE ] && . "$DOTFILE"
-done
-```
-`ln -s ~/dotfiles/zsh/.zshrc ~/.zshrc`
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+2. Set up syntax highlighting following the instructions [here](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md).
+
+_Note: I've only recently switched to zsh, so the above steps are likely to be tweaked after I've had to set things up on another machine._
 
 ---
 
@@ -20,20 +15,6 @@ In `~/.gitconfig`:
 [include]
     path= dotfiles/git/gitconfig
 ```
-
----
-
-In Atom, install `package-sync` package.
-
-Rename `~/.atom` to back it up, then tell Atom where to look for its config:
-
-```
-ln -s ~/dotfiles/atom ~/.atom
-```
-
-Run the "Sync" command for `package-sync`.
-
----
 
 In iTerm2 > Preferences > General > Preferences:
 
