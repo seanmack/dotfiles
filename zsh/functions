@@ -1,0 +1,53 @@
+
+# require an affirmative response before doing <scary thing>
+confirm() {
+    read -q "response?Are you sure you want to do this? [y/N]"
+    echo
+    case "$response" in
+        [yY][eE][sS]|[yY])
+            true
+            ;;
+        *)
+            false
+            ;;
+    esac
+}
+
+open_random_image_url() {
+    open "https://source.unsplash.com/collection/random/$1"
+}
+
+# open google search page for query (first arg) and optionally scope the
+# results to a single domain (second arg)
+google() {
+    search_url=https://www.google.com/search?q=$1
+
+    if [ $# -eq 2 ]
+      then
+        search_url="$search_url+site%3A$2"
+    fi
+
+    open $search_url
+}
+
+# see details about a color using the hex code
+color() {
+  url=https://www.beautycolorcode.com/$1
+  open $url
+}
+
+fbr() {
+  git fetch
+  local branches branch
+  branches=$(git branch -a) &&
+  branch=$(echo "$branches" | fzf +s +m -e) &&
+  git checkout $(echo "$branch" | sed "s:.* remotes/origin/::" | sed "s:.* ::")
+}
+
+sadfarchive_current_and_checkout_new_git_branch() {
+  branch_name=$(git rev-parse --abbrev-ref HEAD)
+  timestamp=$(date +%s)
+  confirm && git branch -m archived_$branch_name_$timestamp
+  git checkout master && git checkout -b $branch_name
+  git branch -u origin/$branch_name
+}

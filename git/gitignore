@@ -6,3 +6,4 @@ progress.md
 public/packs-test/
 public/packs/
 yarn-error.log
+.vscode/

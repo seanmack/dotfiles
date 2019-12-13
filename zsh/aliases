@@ -1,18 +1,18 @@
-########## atom ##########
-
-alias a='atom'
 
 ########## git ##########
 
 # common git commands
 alias gs='git status'
-alias gb='git branch --column'
+#alias gb='git branch --column'
 alias gc='git commit -m'
 alias ga='git add -A'
 alias gd='git diff --cached'
 alias gco='git checkout'
 alias gss="git stash save"
 alias gsa='git stash apply'
+
+# list recent branches in order, with human readable dates
+alias gbr="git for-each-ref --sort='-authordate:iso8601' --format=' %(authordate:relative)%09%(refname:short)' refs/heads | head -n 30"
 
 # copy current branch name to clipboard
 alias gcb="git branch | grep '^\*' | cut -d' ' -f2 | tr -d '\n' | pbcopy"
@@ -29,16 +29,13 @@ alias kus='git stash save --keep-index --include-untracked'
 # better git log
 alias log="git log -20 --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
-# unstage
-alias gus='git reset'
-
 # make a WIP commit with timestamp
 alias wip="git commit -m 'WIP `date`'"
 
 # uncommit the most recent commit
-alias unc="git reset --soft HEAD^"
+alias unc="git reset --soft HEAD~1"
 
-# throw away all changes (dangerous!)
+# throw away all changes
 alias boom="confirm && git add . && git stash save 'boomed'"
 
 # ignore changes to whatever file is passed as an argument
@@ -50,29 +47,29 @@ alias unignore="git update-index --no-assume-unchanged"
 ########## utilities ##########
 
 # reload profile
-alias rl="source $HOME/.bash_profile"
+alias rl="source $HOME/.zshrc"
 
 # edit dotfiles
-alias dot="cd $HOME/dotfiles && atom ."
+alias dot="cd $HOME/dotfiles && code ."
 
-# open a random Unsplash image, e.g. img 100x100
+# open a random Unsplash image with specific dimensions, e.g. img 100x100
 alias img='open_random_image_url'
 
 # find aliases that match the arg, e.g. `fal log` or `fal .`
 alias fal='alias | grep'
 
-# flush DNS cache (works on Mojave)
+# flush DNS cache
 alias flushdns="sudo killall -HUP mDNSResponder; sleep 2;"
 
-# search google for query (first argument) scoped to domain (second argument)
-alias g="google"
+# see what's hogging resources
+alias cpu="top -F -R -o cpu"
 
 ########## rails ##########
 
 alias rc='rails console'
 alias rs='rails server'
-alias pspec='rake parallel:spec'
-alias loadf='rake db:fixtures:load'
+alias pspec='bundle exec rake parallel:spec'
+alias loadf='bundle exec rake db:fixtures:load'
 
 # debug server (pry-rescue must be installed)
 alias dbs="rescue rails server webrick"
@@ -85,5 +82,5 @@ alias dbj="rescue rake jobs:work"
 # run all JS tests and rerun them on every code change
 alias yt="yarn test --watchAll"
 
-# run JS tests, but only for filepaths that match the pattern
+# run JS tests, but only for filepaths that match the pattern (case-insensitive), e.g. ytp mycomponent
 alias ytp="yarn test --watchAll --testPathPattern"

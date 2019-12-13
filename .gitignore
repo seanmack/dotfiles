@@ -7,4 +7,5 @@ atom/.apm
 atom/recovery
 bin/local/**/*
 bash/local/**/*
+zsh/local/**/*
 !bash/local/.gitkeep

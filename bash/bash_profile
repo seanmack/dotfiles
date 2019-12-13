@@ -1,7 +1,0 @@
-# if directory isn't empty, iterate over the dotfiles in it
-if [ -n "$(find local -maxdepth 0 -type d -empty 2>/dev/null)" ]; then
-  for DOTFILE in `find local`
-  do
-    [ -f $DOTFILE ] && . "$DOTFILE"
-  done
-fi
