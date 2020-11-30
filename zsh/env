@@ -1,3 +1,2 @@
-source ~/.rvm/scripts/rvm
 export EDITOR=code
 export BUNDLER_EDITOR=code
