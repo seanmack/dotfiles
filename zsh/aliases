@@ -85,5 +85,5 @@ alias yt="yarn test --watchAll"
 # run JS tests, but only for filepaths that match the pattern (case-insensitive), e.g. ytp mycomponent
 alias ytp="yarn test --watchAll --testPathPattern"
 
-########## yarn ##########
+########## editor ##########
 alias c="code ."
