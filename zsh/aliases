@@ -50,7 +50,7 @@ alias unignore="git update-index --no-assume-unchanged"
 alias rl="source $HOME/.zshrc"
 
 # edit dotfiles
-alias dot="cd $HOME/dotfiles && code ."
+alias dot="cd $HOME/dotfiles"
 
 # open a random Unsplash image with specific dimensions, e.g. img 100x100
 alias img='open_random_image_url'
@@ -84,3 +84,6 @@ alias yt="yarn test --watchAll"
 
 # run JS tests, but only for filepaths that match the pattern (case-insensitive), e.g. ytp mycomponent
 alias ytp="yarn test --watchAll --testPathPattern"
+
+########## yarn ##########
+alias c="code ."
