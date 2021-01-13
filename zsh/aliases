@@ -65,6 +65,9 @@ alias flushdns="sudo killall -HUP mDNSResponder; sleep 2;"
 # see what's hogging resources
 alias cpu="top -F -R -o cpu"
 
+# see what's in $PATH
+alias path="printPath"
+
 ########## rails ##########
 
 alias rc='rails console'

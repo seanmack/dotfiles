@@ -51,3 +51,7 @@ sadfarchive_current_and_checkout_new_git_branch() {
   git checkout master && git checkout -b $branch_name
   git branch -u origin/$branch_name
 }
+
+printPath() {
+  echo $PATH | tr \: \\n
+}
