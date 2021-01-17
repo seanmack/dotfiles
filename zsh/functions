@@ -55,3 +55,12 @@ sadfarchive_current_and_checkout_new_git_branch() {
 printPath() {
   echo $PATH | tr \: \\n
 }
+
+function git_commit_without_needing_quotes() {
+  message=$*
+  if [ -z "$message" ]; then
+    echo "Add a message"
+    return 1
+  fi
+  git commit -am "$message"
+}

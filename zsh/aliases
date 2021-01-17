@@ -4,7 +4,7 @@
 # common git commands
 alias gs='git status'
 #alias gb='git branch --column'
-alias gc='git commit -m'
+alias gc='git_commit_without_needing_quotes'
 alias ga='git add -A'
 alias gd='git diff --cached'
 alias gco='git checkout'
