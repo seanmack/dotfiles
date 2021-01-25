@@ -62,5 +62,5 @@ function git_commit_without_needing_quotes() {
     echo "Add a message"
     return 1
   fi
-  git commit -am "$message"
+  git commit -m "$message"
 }
